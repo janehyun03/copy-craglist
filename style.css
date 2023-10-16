@@ -2,37 +2,36 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: 1px solid pink; */
+}
+a {
   color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: -webkit-link;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: xx-large;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h3 {
+  font-size: medium;
+  font-size: 100%;
+  padding: 2px 0px;
 }
 .main-container {
   display: flex;
-  margin: 10px 200px;
-}
-
-.title-box {
-  text-align: center;
-  font-size: large;
-  font-weight: bold;
-  border-top: 1px solid #b7b4b4;
-  border-bottom: 1px solid #b7b4b4;
-  background: #eee;
-}
-
-.list-container {
-  display: flex;
-  margin-top: 5px;
-  /* width: 30%; */
-}
-.first-col,
-.second-col,
-.third-col {
-  width: 100%;
-}
-
-.list-container ul {
-  list-style: none;
+  margin: 20px 230px;
 }
 .nav {
+  font-size: small;
+  /* padding: 100px; */
   width: 200px;
   border-left: 1px solid #b7b4b4;
   border-right: 1px solid #b7b4b4;
@@ -40,6 +39,112 @@
   flex-direction: column;
   align-items: center;
   background: #eee;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.logo-image {
+  /* border: 5px solid aqua; */
+}
+.logo-image img {
+  object-fit: contain;
+  height: 100%;
+  width: 35px;
+}
+
+.search-box {
+  margin-top: 15px;
+  border: 1px solid #b7b4b4;
+  height: 30px;
+  border-radius: 5px;
+  width: 96%;
+}
+
+input::-webkit-input-placeholder {
+  background-image: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-256.png);
+  background-size: contain;
+  background-position: 1px center;
+  background-repeat: no-repeat;
+  text-align: center;
+  text-indent: 0;
+}
+
+.event-calendar {
+  margin-top: 20px;
+  font-weight: bold;
+}
+.calendar-container {
+  margin: 0 50px;
+  background-color: white;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.calendar {
+  text-align: center;
+  border-collapse: collapse;
+}
+table,
+td {
+  color: black;
+  border: 1px solid lightgray;
+  padding: 0 2px;
+}
+
+tr:first-child {
+  background-color: lightgray;
+}
+
+.first-nav-list,
+.second-nav-list {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.first-nav-list li,
+.second-nav-list li {
+  list-style: none;
+  padding: 2px;
+}
+
+.title-box {
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  border-top: 1px solid #d2cfcf;
+  border-bottom: 1px solid #d2cfcf;
+  background: #eee;
+}
+main {
+  margin-top: 15px;
+}
+.list-container {
+  display: flex;
+  margin-top: 5px;
+}
+
+.second-col ul,
+.third-col ul {
+  padding-left: 10%;
+}
+.first-col,
+.second-col,
+.third-col {
+  width: 100%;
+}
+
+.first-col li,
+.second-col li,
+.third-col li {
+  border-bottom: 1px solid #eee;
+  font-size: small;
+}
+
+.list-container ul {
+  list-style: none;
 }
 
 .lang {
@@ -53,15 +158,71 @@
   border-right: 1px solid #b7b4b4;
 }
 
+.main {
+  width: 100%;
+}
+
 header {
-  margin: 0 10px;
-  height: 5vh;
+  margin: 0 5px;
+  height: 6vh;
   border-top: 1px solid #b7b4b4;
   border-bottom: 1px solid #b7b4b4;
   background: #eee;
+  display: flex;
+  justify-content: space-between;
 }
-.main {
-  width: 100%;
+.button-container,
+.icon-container {
+  display: flex;
+}
+
+h2 {
+  font-family: "Times New Roman", Times, serif;
+  padding: 10px;
+  font-weight: normal;
+}
+.button-container {
+  align-items: center;
+}
+button {
+  margin-left: 10px;
+  border-top: #b7b4b4;
+  border-bottom: #b7b4b4;
+  border-left: white;
+  border-right: white;
+  background-color: white;
+  width: 30px;
+  height: 20px;
+}
+
+#lang-select {
+  margin: 10px;
+  width: 70%;
+}
+.post,
+.account {
+  margin-top: 3px;
+  margin-right: 15px;
+}
+.post a,
+.account a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 35px;
+  text-decoration: none;
+  color: black;
+}
+.post img,
+.account img {
+  object-fit: contain;
+  width: 25px;
+  height: 25px;
+}
+
+.post p,
+.account p {
+  font-size: small;
 }
 
 main {
@@ -72,19 +233,25 @@ main {
 .second {
   display: flex;
   flex-direction: column;
-  padding: 10px;
   width: 40%;
+  padding: 0px 10px;
 }
 
 .third {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+
   width: 20%;
 }
 
 .main-box {
   margin: 10px;
+}
+.list li {
+  list-style: none;
+}
+.nearbyList {
+  display: none;
 }
 
 footer {
