@@ -259,3 +259,7 @@ footer {
   width: 100%;
   background: #eee;
 }
+
+footer li {
+  text-align: center;
+}
