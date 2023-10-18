@@ -47,11 +47,11 @@ h3 {
 }
 .logo-image {
   /* border: 5px solid aqua; */
-}
-.logo-image img {
-  object-fit: contain;
-  height: 100%;
-  width: 35px;
+  img {
+    object-fit: contain;
+    height: 100%;
+    width: 35px;
+  }
 }
 
 .search-box {
@@ -258,8 +258,7 @@ footer {
   height: 5vh;
   width: 100%;
   background: #eee;
-}
-
-footer li {
-  text-align: center;
+  li {
+    text-align: center;
+  }
 }
